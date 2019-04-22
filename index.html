@@ -1,0 +1,228 @@
+<!doctype html>
+<html>
+
+<!--The css stylesheet and google font are linked-->
+    <link rel="stylesheet" href="./css/site.css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+    <head>
+      <title>
+        Currencies in USD
+      </title>
+    </head>
+    <body>
+<!--Text is inserted to the left of the graph.-->      
+        <div class="Header">
+            <div class="Header-content">
+                Amounts Of Foreign Currencies Equal To One United States Dollar
+            </div>
+        </div>
+        <div class="SidebarAndBodyBox">
+            <div class="SidebarBox">
+                <div class="ButtonBox">
+                    <br>
+<!--MAIN ACTION BUTTON--> 
+                    <button onClick="clearButton()" type="button">Clear Selections</button>
+                </div>
+                <div class="InputBox">
+<!--Insert the 5 dropdown buttons--> 
+                    <select onchange="change()" id="selection1">
+                        <option value="Currency"> Currency</option>
+                        <option value="AUD"> AUD</option>
+                        <option value="BGN"> BGN</option>
+                        <option value="BRL"> BRL</option>
+                        <option value="CAD"> CAD</option>
+                        <option value="CHF"> CHF</option>
+                        <option value="CNY"> CNY</option>
+                        <option value="CZK"> CZK</option>
+                        <option value="DKK"> DKK</option>
+                        <option value="EUR"> EUR</option>
+                        <option value="GBP"> GBP</option>
+                        <option value="HKD"> HKD</option>
+                        <option value="HRK"> HRK</option>
+                        <option value="HUF"> HUF</option>
+                        <option value="IDR"> IDR</option>
+                        <option value="ILS"> ILS</option>
+                        <option value="INR"> INR</option>
+                        <option value="ISK"> ISK</option>
+                        <option value="JPY"> JPY</option>
+                        <option value="KRW"> KRW</option>
+                        <option value="MXN"> MXN</option>
+                        <option value="MYR"> MYR</option>
+                        <option value="NOK"> NOK</option>
+                        <option value="NZD"> NZD</option>
+                        <option value="PHP"> PHP</option>
+                        <option value="PLN"> PLN</option>
+                        <option value="RON"> RON</option>
+                        <option value="RUB"> RUB</option>
+                        <option value="SEK"> SEK</option>
+                        <option value="SGD"> SGD</option>
+                        <option value="THB"> THB</option>
+                        <option value="TRY"> TRY</option>
+                        <option value="USD"> USD</option>
+                        <option value="ZAR"> ZAR</option>
+                    </select>
+                    <select onchange="change()" id="selection2">
+                        <option value="Currency"> Currency</option>
+                        <option value="AUD"> AUD</option>
+                        <option value="BGN"> BGN</option>
+                        <option value="BRL"> BRL</option>
+                        <option value="CAD"> CAD</option>
+                        <option value="CHF"> CHF</option>
+                        <option value="CNY"> CNY</option>
+                        <option value="CZK"> CZK</option>
+                        <option value="DKK"> DKK</option>
+                        <option value="EUR"> EUR</option>
+                        <option value="GBP"> GBP</option>
+                        <option value="HKD"> HKD</option>
+                        <option value="HRK"> HRK</option>
+                        <option value="HUF"> HUF</option>
+                        <option value="IDR"> IDR</option>
+                        <option value="ILS"> ILS</option>
+                        <option value="INR"> INR</option>
+                        <option value="ISK"> ISK</option>
+                        <option value="JPY"> JPY</option>
+                        <option value="KRW"> KRW</option>
+                        <option value="MXN"> MXN</option>
+                        <option value="MYR"> MYR</option>
+                        <option value="NOK"> NOK</option>
+                        <option value="NZD"> NZD</option>
+                        <option value="PHP"> PHP</option>
+                        <option value="PLN"> PLN</option>
+                        <option value="RON"> RON</option>
+                        <option value="RUB"> RUB</option>
+                        <option value="SEK"> SEK</option>
+                        <option value="SGD"> SGD</option>
+                        <option value="THB"> THB</option>
+                        <option value="TRY"> TRY</option>
+                        <option value="USD"> USD</option>
+                        <option value="ZAR"> ZAR</option>
+                    </select>
+                    <select onchange="change()" id="selection3">
+                        <option value="Currency"> Currency</option>
+                        <option value="AUD"> AUD</option>
+                        <option value="BGN"> BGN</option>
+                        <option value="BRL"> BRL</option>
+                        <option value="CAD"> CAD</option>
+                        <option value="CHF"> CHF</option>
+                        <option value="CNY"> CNY</option>
+                        <option value="CZK"> CZK</option>
+                        <option value="DKK"> DKK</option>
+                        <option value="EUR"> EUR</option>
+                        <option value="GBP"> GBP</option>
+                        <option value="HKD"> HKD</option>
+                        <option value="HRK"> HRK</option>
+                        <option value="HUF"> HUF</option>
+                        <option value="IDR"> IDR</option>
+                        <option value="ILS"> ILS</option>
+                        <option value="INR"> INR</option>
+                        <option value="ISK"> ISK</option>
+                        <option value="JPY"> JPY</option>
+                        <option value="KRW"> KRW</option>
+                        <option value="MXN"> MXN</option>
+                        <option value="MYR"> MYR</option>
+                        <option value="NOK"> NOK</option>
+                        <option value="NZD"> NZD</option>
+                        <option value="PHP"> PHP</option>
+                        <option value="PLN"> PLN</option>
+                        <option value="RON"> RON</option>
+                        <option value="RUB"> RUB</option>
+                        <option value="SEK"> SEK</option>
+                        <option value="SGD"> SGD</option>
+                        <option value="THB"> THB</option>
+                        <option value="TRY"> TRY</option>
+                        <option value="USD"> USD</option>
+                        <option value="ZAR"> ZAR</option>
+                    </select>
+                    <select onchange="change()" id="selection4">
+                        <option value="Currency"> Currency</option>
+                        <option value="AUD"> AUD</option>
+                        <option value="BGN"> BGN</option>
+                        <option value="BRL"> BRL</option>
+                        <option value="CAD"> CAD</option>
+                        <option value="CHF"> CHF</option>
+                        <option value="CNY"> CNY</option>
+                        <option value="CZK"> CZK</option>
+                        <option value="DKK"> DKK</option>
+                        <option value="EUR"> EUR</option>
+                        <option value="GBP"> GBP</option>
+                        <option value="HKD"> HKD</option>
+                        <option value="HRK"> HRK</option>
+                        <option value="HUF"> HUF</option>
+                        <option value="IDR"> IDR</option>
+                        <option value="ILS"> ILS</option>
+                        <option value="INR"> INR</option>
+                        <option value="ISK"> ISK</option>
+                        <option value="JPY"> JPY</option>
+                        <option value="KRW"> KRW</option>
+                        <option value="MXN"> MXN</option>
+                        <option value="MYR"> MYR</option>
+                        <option value="NOK"> NOK</option>
+                        <option value="NZD"> NZD</option>
+                        <option value="PHP"> PHP</option>
+                        <option value="PLN"> PLN</option>
+                        <option value="RON"> RON</option>
+                        <option value="RUB"> RUB</option>
+                        <option value="SEK"> SEK</option>
+                        <option value="SGD"> SGD</option>
+                        <option value="THB"> THB</option>
+                        <option value="TRY"> TRY</option>
+                        <option value="USD"> USD</option>
+                        <option value="ZAR"> ZAR</option>
+                    </select>
+                    <select onchange="change()" id="selection5">
+                        <option value="Currency"> Currency</option>
+                        <option value="AUD"> AUD</option>
+                        <option value="BGN"> BGN</option>
+                        <option value="BRL"> BRL</option>
+                        <option value="CAD"> CAD</option>
+                        <option value="CHF"> CHF</option>
+                        <option value="CNY"> CNY</option>
+                        <option value="CZK"> CZK</option>
+                        <option value="DKK"> DKK</option>
+                        <option value="EUR"> EUR</option>
+                        <option value="GBP"> GBP</option>
+                        <option value="HKD"> HKD</option>
+                        <option value="HRK"> HRK</option>
+                        <option value="HUF"> HUF</option>
+                        <option value="IDR"> IDR</option>
+                        <option value="ILS"> ILS</option>
+                        <option value="INR"> INR</option>
+                        <option value="ISK"> ISK</option>
+                        <option value="JPY"> JPY</option>
+                        <option value="KRW"> KRW</option>
+                        <option value="MXN"> MXN</option>
+                        <option value="MYR"> MYR</option>
+                        <option value="NOK"> NOK</option>
+                        <option value="NZD"> NZD</option>
+                        <option value="PHP"> PHP</option>
+                        <option value="PLN"> PLN</option>
+                        <option value="RON"> RON</option>
+                        <option value="RUB"> RUB</option>
+                        <option value="SEK"> SEK</option>
+                        <option value="SGD"> SGD</option>
+                        <option value="THB"> THB</option>
+                        <option value="TRY"> TRY</option>
+                        <option value="USD"> USD</option>
+                        <option value="ZAR"> ZAR</option>
+                    </select>
+
+                </div>
+            </div>
+<!--BodyBox is the body of the page beneath the header.        -->
+            <div class="BodyBox">
+<!--Graph is the graph box.-->
+                <div class="BodyBox-graph">
+<!--The graph box is split in 2.-->
+                    <div class="BodyBox-graph-upper">
+                    </div>
+                    <div class="ContainerOfGraphLower">
+<!--The javascript reads current currency values from the api and creates divs here. Each bar in the graph is a div within graph-lower. When height is equal to the value of the currency a bar is created representing that value.-->
+                    </div> <!--Graph-lower Close-->
+                </div> <!-- Graph whole Close-->
+            </div> <!--BodyBox Close-->        
+        </div> <!--SidebarAndBody Close-->
+    </body>
+    <script src="js/main.js"></script>
+</html>
+
